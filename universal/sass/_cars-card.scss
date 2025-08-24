@@ -2,94 +2,227 @@
   background-color: #f1eded;
   height: 100%;
   .cars_grid {
-    padding-top: 50px;
+    // padding-top: 50px;
     display: grid;
-    grid-template-columns: 585px 263px;
-    .card {
-      position: relative;
-      background: #fff;
-      border-radius: 8px;
-      padding: 30px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      width: 555px;
-      height: 370px;
-
-      &__category {
-        font-weight: 900;
-        font-size: 12px;
-        line-height: 1.25;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: #6e99ae;
-      }
-
-      &__title {
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 1.2;
-        color: #262d33;
-        width: 45%;
-        margin-top: 20px;
-      }
-
-      &__desc {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.42857;
-        color: #4b5157;
-        width: 50%;
-        margin-top: 20px;
-      }
-
-      &__image {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50%;
-        border-top-right-radius: 8px;
-        border-bottom-left-radius: 100px;
-      }
-
-      &__footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .card_top {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-right: 150px;
+      .card {
+        position: relative;
+        background: #fff;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 555px;
+        height: 370px;
         margin-top: 50px;
-        border-top: 1px solid #eee;
-        padding-top: 0.8rem;
-      }
-
-      &__author {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-
-        img {
-          width: 32px;
-          height: 32px;
-          border-radius: 50%;
+        &__category {
+          font-weight: 900;
+          font-size: 12px;
+          line-height: 1.25;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+          color: #6e99ae;
         }
 
-        span {
-          font-size: 0.85rem;
-          color: #444;
+        &__title {
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 1.2;
+          color: #262d33;
+          width: 45%;
+          margin-top: 20px;
+        }
 
-          strong {
-            font-weight: 600;
+        &__desc {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 1.42857;
+          color: #4b5157;
+          width: 50%;
+          margin-top: 20px;
+        }
+
+        &__image {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 50%;
+          border-top-right-radius: 8px;
+          border-bottom-left-radius: 100px;
+        }
+
+        &__footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 50px;
+          border-top: 1px solid #eee;
+          padding-top: 0.8rem;
+        }
+
+        &__author {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+          }
+
+          span {
+            font-size: 0.85rem;
+            color: #444;
+
+            strong {
+              font-weight: 600;
+            }
+          }
+        }
+
+        &__comments {
+          font-size: 0.8rem;
+          color: #888;
+          display: flex;
+          align-items: center;
+          gap: 0.3rem;
+
+          .icon-comment {
+            width: 16px;
+            height: 16px;
           }
         }
       }
+      .popular {
+        width: 263px;
+        height: 370px;
+        background: url(../img/popular.svg);
+        margin-top: 50px;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        &__category {
+          font-weight: 900;
+          font-size: 12px;
+          line-height: 1.25;
+          text-align: center;
+          color: #fff;
+          background-color: #02b202;
+          width: 66px;
+          height: 25px;
+          border-radius: 5px;
+          padding: 4px;
+        }
+        &__title {
+          margin-top: 150px;
+          font-weight: 900;
+          font-size: 12px;
+          line-height: 1.25;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+          color: #e7d9ff;
+        }
+        &__desc {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 1.5625;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+          color: #fff;
+          margin-top: 10px;
+        }
+        &__footer {
+          display: flex;
+          align-items: start;
+          justify-content: space-between;
+          flex-direction: column;
+          margin-top: 10px;
+        }
+        &__author {
+          div {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.42857;
+            color: #fff;
+            opacity: 0.85;
+            margin-left: 40px;
+            margin-top: -30px;
+          }
+        }
+        &__comments {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          margin-left: 40px;
+          p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.25;
+            color: #fff;
+            opacity: 0.4;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .card_bottom {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 50px;
+      .cats {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 263px;
+        height: 370px;
 
-      &__comments {
-        font-size: 0.8rem;
-        color: #888;
-        display: flex;
-        align-items: center;
-        gap: 0.3rem;
+        img {
+          width: 100%;
+          border-radius: 8px 8px 0 0;
+        }
+        &__footer {
+          padding: 20px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 1.5625;
+          color: #262d33;
+        }
+      }
+      .card_right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-right: 480px;
+        gap: 20px;
+        .question {
+          width: 263px;
+          height: 170px;
+          background-color: #fff;
+          border-radius: 8px;
+          padding: 20px;
 
-        .icon-comment {
-          width: 16px;
-          height: 16px;
+          h3 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.5625;
+            color: #262d33;
+          }
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.42857;
+            color: #4b5157;
+            margin: 10px 0;
+          }
+          h4 {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.25;
+            color: #939699;
+          }
         }
       }
     }

@@ -462,11 +462,14 @@ i {
   height: 100%;
 }
 .cars .cars_grid {
-  padding-top: 50px;
   display: grid;
-  grid-template-columns: 585px 263px;
 }
-.cars .cars_grid .card {
+.cars .cars_grid .card_top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-right: 150px;
+}
+.cars .cars_grid .card_top .card {
   position: relative;
   background: #fff;
   border-radius: 8px;
@@ -474,8 +477,9 @@ i {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 555px;
   height: 370px;
+  margin-top: 50px;
 }
-.cars .cars_grid .card__category {
+.cars .cars_grid .card_top .card__category {
   font-weight: 900;
   font-size: 12px;
   line-height: 1.25;
@@ -483,7 +487,7 @@ i {
   text-transform: uppercase;
   color: #6e99ae;
 }
-.cars .cars_grid .card__title {
+.cars .cars_grid .card_top .card__title {
   font-weight: 700;
   font-size: 25px;
   line-height: 1.2;
@@ -491,7 +495,7 @@ i {
   width: 45%;
   margin-top: 20px;
 }
-.cars .cars_grid .card__desc {
+.cars .cars_grid .card_top .card__desc {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.42857;
@@ -499,7 +503,7 @@ i {
   width: 50%;
   margin-top: 20px;
 }
-.cars .cars_grid .card__image {
+.cars .cars_grid .card_top .card__image {
   position: absolute;
   top: 0;
   right: 0;
@@ -507,7 +511,7 @@ i {
   border-top-right-radius: 8px;
   border-bottom-left-radius: 100px;
 }
-.cars .cars_grid .card__footer {
+.cars .cars_grid .card_top .card__footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -515,33 +519,158 @@ i {
   border-top: 1px solid #eee;
   padding-top: 0.8rem;
 }
-.cars .cars_grid .card__author {
+.cars .cars_grid .card_top .card__author {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.cars .cars_grid .card__author img {
+.cars .cars_grid .card_top .card__author img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
 }
-.cars .cars_grid .card__author span {
+.cars .cars_grid .card_top .card__author span {
   font-size: 0.85rem;
   color: #444;
 }
-.cars .cars_grid .card__author span strong {
+.cars .cars_grid .card_top .card__author span strong {
   font-weight: 600;
 }
-.cars .cars_grid .card__comments {
+.cars .cars_grid .card_top .card__comments {
   font-size: 0.8rem;
   color: #888;
   display: flex;
   align-items: center;
   gap: 0.3rem;
 }
-.cars .cars_grid .card__comments .icon-comment {
+.cars .cars_grid .card_top .card__comments .icon-comment {
   width: 16px;
   height: 16px;
+}
+.cars .cars_grid .card_top .popular {
+  width: 263px;
+  height: 370px;
+  background: url(../img/popular.svg);
+  margin-top: 50px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.cars .cars_grid .card_top .popular__category {
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  color: #fff;
+  background-color: #02b202;
+  width: 66px;
+  height: 25px;
+  border-radius: 5px;
+  padding: 4px;
+}
+.cars .cars_grid .card_top .popular__title {
+  margin-top: 150px;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #e7d9ff;
+}
+.cars .cars_grid .card_top .popular__desc {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5625;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 10px;
+}
+.cars .cars_grid .card_top .popular__footer {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.cars .cars_grid .card_top .popular__author div {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #fff;
+  opacity: 0.85;
+  margin-left: 40px;
+  margin-top: -30px;
+}
+.cars .cars_grid .card_top .popular__comments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 40px;
+}
+.cars .cars_grid .card_top .popular__comments p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #fff;
+  opacity: 0.4;
+  display: inline-block;
+}
+.cars .cars_grid .card_bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+}
+.cars .cars_grid .card_bottom .cats {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 263px;
+  height: 370px;
+}
+.cars .cars_grid .card_bottom .cats img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.cars .cars_grid .card_bottom .cats__footer {
+  padding: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5625;
+  color: #262d33;
+}
+.cars .cars_grid .card_bottom .card_right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-right: 480px;
+  gap: 20px;
+}
+.cars .cars_grid .card_bottom .card_right .question {
+  width: 263px;
+  height: 170px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+.cars .cars_grid .card_bottom .card_right .question h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5625;
+  color: #262d33;
+}
+.cars .cars_grid .card_bottom .card_right .question p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #4b5157;
+  margin: 10px 0;
+}
+.cars .cars_grid .card_bottom .card_right .question h4 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #939699;
 }
 
 /*# sourceMappingURL=style.css.map */
