@@ -1,0 +1,292 @@
+@use "./mixns" as *;
+@use "./variable" as *;
+
+.showcase {
+  background: #262d33;
+  padding: 30px 0;
+  &_links {
+    @include flex(center, space-between, 30px);
+    overflow-x: auto;
+    li {
+      text-wrap: nowrap;
+      a {
+        color: #fff;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 1.42857;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &_bottom {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 600px;
+    margin-top: 60px;
+  }
+  &_mountain {
+    background: url(../img/mountain.png);
+    background-size: cover;
+    border-radius: 8px 0 0 8px;
+    &_item {
+      width: 88%;
+      margin: 0 auto;
+      padding: 30px 0;
+      @include flex(start, space-between, 5px);
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+  &_recomended {
+    background-color: #fff;
+    border-radius: 0 8px 8px 0;
+    .recomended_wrapper {
+      .title {
+        h2 {
+          margin-top: 20px;
+          font-weight: 900;
+          font-size: 14px;
+          line-height: 1.42857;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+          color: #262d33;
+          text-align: center;
+          width: 190px;
+          margin: 25px 0 25px 50px;
+        }
+      }
+      .recomended_cards {
+        .card_food {
+          width: 320px;
+          height: 105px;
+          background: #f5f5f5;
+          border: 1px solid rgba(179, 179, 179, 0.278);
+          padding: 15px;
+          h4 {
+            font-weight: 900;
+            font-size: 12px;
+            line-height: 1.25;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #3bbdc4;
+            margin-bottom: 10px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.42857;
+            color: #4b5157;
+          }
+        }
+        .card_cars {
+          width: 320px;
+          height: 105px;
+          background: #fff;
+          border: 1px solid rgba(179, 179, 179, 0.278);
+          padding: 15px;
+          h4 {
+            font-weight: 900;
+            font-size: 12px;
+            line-height: 1.25;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #6e99ae;
+            margin-bottom: 10px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.42857;
+            color: #4b5157;
+          }
+        }
+        .card_movies {
+          width: 320px;
+          height: 105px;
+          background: #fff;
+          border: 1px solid rgba(179, 179, 179, 0.278);
+          padding: 15px;
+          h4 {
+            font-weight: 900;
+            font-size: 12px;
+            line-height: 1.25;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #ac8ee3;
+            margin-bottom: 10px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.42857;
+            color: #4b5157;
+          }
+        }
+        .card_nfl {
+          width: 320px;
+          height: 105px;
+          background: #fff;
+          border: 1px solid rgba(179, 179, 179, 0.278);
+          padding: 15px;
+          h4 {
+            font-weight: 900;
+            font-size: 12px;
+            line-height: 1.25;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #ffa34d;
+            margin-bottom: 10px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.42857;
+            color: #4b5157;
+          }
+        }
+        .card_tech {
+          width: 320px;
+          height: 108px;
+          background: #fff;
+          border: 1px solid rgba(179, 179, 179, 0.278);
+          padding: 15px;
+          border-radius: 5px;
+          h4 {
+            font-weight: 900;
+            font-size: 12px;
+            line-height: 1.25;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #3dc47e;
+            margin-bottom: 10px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.42857;
+            color: #4b5157;
+          }
+        }
+      }
+    }
+  }
+}
+
+.avatar {
+  @include flex(center, flex-start, 5px);
+  h2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #fff;
+  }
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #fff;
+  }
+}
+
+.destinations {
+  h2 {
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #4592ff;
+    padding-bottom: 10px;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  button {
+    background: #4592ff;
+    @include flex(center, center, 5px);
+    color: #fff;
+    border: none;
+    width: 138px;
+    height: 40px;
+    border-radius: 20px;
+  }
+}
+.play_buttons {
+  @include flex(center, start, 50px);
+}
+.play {
+  @include flex(center, start, 20px);
+  h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #fff;
+  }
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #fff;
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 1088px) {
+  .destinations {
+    h1 {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .showcase {
+    &_bottom {
+      width: 100%;
+      grid-template-columns: 100%;
+    }
+  }
+  .showcase_recomended {
+    height: 200px;
+    .recomended_cards {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      overflow-y: scroll;
+    }
+  }
+}
+
+@media (max-width: 629px) {
+  .destinations {
+    h1 {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .destinations {
+    h1 {
+      font-size: 25px;
+    }
+    .play_buttons {
+      @include flex(start, start, 50px);
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+@media (max-width: 443px) {
+  .destinations {
+    h1 {
+      font-size: 20px;
+    }
+  }
+}
