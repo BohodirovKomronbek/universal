@@ -462,12 +462,13 @@ i {
   height: 100%;
 }
 .cars .cars_grid {
-  display: grid;
+  padding-bottom: 50px;
 }
 .cars .cars_grid .card_top {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   padding-right: 150px;
+  gap: 30px;
 }
 .cars .cars_grid .card_top .card {
   position: relative;
@@ -475,7 +476,7 @@ i {
   border-radius: 8px;
   padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 555px;
+  width: 100%;
   height: 370px;
   margin-top: 50px;
 }
@@ -550,7 +551,7 @@ i {
 .cars .cars_grid .card_top .popular {
   width: 263px;
   height: 370px;
-  background: url(../img/popular.svg);
+  background: url(../img/popular.svg) no-repeat;
   margin-top: 50px;
   border-radius: 8px;
   padding: 20px;
@@ -618,9 +619,10 @@ i {
   display: inline-block;
 }
 .cars .cars_grid .card_bottom {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  gap: 50px;
   margin-top: 50px;
+  align-items: flex-start;
 }
 .cars .cars_grid .card_bottom .cats {
   background: #fff;
@@ -628,9 +630,9 @@ i {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 263px;
   height: 370px;
+  flex: 0 0 263px;
 }
 .cars .cars_grid .card_bottom .cats img {
-  width: 100%;
   border-radius: 8px 8px 0 0;
 }
 .cars .cars_grid .card_bottom .cats__footer {
@@ -643,8 +645,8 @@ i {
 .cars .cars_grid .card_bottom .card_right {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-right: 480px;
-  gap: 20px;
+  gap: 30px;
+  max-width: 550px;
 }
 .cars .cars_grid .card_bottom .card_right .question {
   width: 263px;
