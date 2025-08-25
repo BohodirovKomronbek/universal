@@ -8,6 +8,11 @@
   font-family: $font-lato;
 }
 
+::selection {
+  background-color: aqua;
+  color: #000000;
+}
+
 a {
   text-decoration: none;
 }
