@@ -1,0 +1,432 @@
+.news {
+  background-color: #f1eded;
+  &__wrapper {
+    padding: 50px 0;
+    display: flex;
+    .news__left_card {
+      .flights {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 20px;
+        border-radius: 8px 8px 0 0;
+        border-bottom: 1px solid rgb(215, 214, 214);
+        width: 848px;
+        height: 245px;
+        &__text {
+          .flights__text__title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h4 {
+              font-weight: 900;
+              font-size: 12px;
+              line-height: 1.25;
+              letter-spacing: 0.04em;
+              text-transform: uppercase;
+              color: #4592ff;
+            }
+          }
+          .flights__text__text {
+            h2 {
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 1.25;
+              color: #262d33;
+              width: 70%;
+              margin: 15px 0 10px 0;
+            }
+            p {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 1.42857;
+              width: 80%;
+              color: #4b5157;
+            }
+          }
+          .flights__text__comments {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            p,
+            h4 {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 1.25;
+              color: #939699;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 5px;
+            }
+          }
+        }
+      }
+      // food
+      .food {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 20px;
+        border-bottom: 1px solid rgb(215, 214, 214);
+        width: 848px;
+        height: 245px;
+        &__text {
+          .food_title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h4 {
+              font-weight: 900;
+              font-size: 12px;
+              line-height: 1.25;
+              letter-spacing: 0.04em;
+              text-transform: uppercase;
+              color: #3bbdc4;
+            }
+          }
+          .food_text {
+            h2 {
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 1.25;
+              color: #262d33;
+              width: 70%;
+              margin: 10px 0 10px 0;
+            }
+            p {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 1.42857;
+              width: 80%;
+              color: #4b5157;
+            }
+          }
+          .food_comments {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            p,
+            h4 {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 1.25;
+              color: #939699;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 5px;
+            }
+          }
+        }
+      }
+      // science
+      .science {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 20px;
+        border-bottom: 1px solid rgb(215, 214, 214);
+        width: 848px;
+        height: 245px;
+        &__text {
+          .science_title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h4 {
+              font-weight: 900;
+              font-size: 12px;
+              line-height: 1.25;
+              letter-spacing: 0.04em;
+              text-transform: uppercase;
+              color: #ff4f52;
+            }
+          }
+          .science_text {
+            h2 {
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 1.25;
+              color: #262d33;
+              width: 70%;
+              margin: 20px 0 10px 0;
+            }
+            p {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 1.42857;
+              width: 80%;
+              color: #4b5157;
+            }
+          }
+          .science_comments {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            p,
+            h4 {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 1.25;
+              color: #939699;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 5px;
+            }
+          }
+        }
+      }
+      // health
+      .health {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 20px;
+        border-bottom: 1px solid rgb(215, 214, 214);
+        width: 848px;
+        height: 245px;
+        &__text {
+          .health_title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h4 {
+              font-weight: 900;
+              font-size: 12px;
+              line-height: 1.25;
+              letter-spacing: 0.04em;
+              text-transform: uppercase;
+              color: #3bbdc4;
+            }
+          }
+          .health_text {
+            h2 {
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 1.25;
+              color: #262d33;
+              width: 70%;
+              margin: 10px 0 10px 0;
+            }
+            p {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 1.42857;
+              width: 80%;
+              color: #4b5157;
+            }
+          }
+          .health_comments {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            p,
+            h4 {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 1.25;
+              color: #939699;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 5px;
+            }
+          }
+        }
+      }
+      // forest
+      .forest {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 20px;
+        border-bottom: 1px solid rgb(215, 214, 214);
+        width: 848px;
+        height: 245px;
+        &__text {
+          .forest_title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h4 {
+              font-weight: 900;
+              font-size: 12px;
+              line-height: 1.25;
+              letter-spacing: 0.04em;
+              text-transform: uppercase;
+              color: #ff4f52;
+            }
+          }
+          .forest_text {
+            h2 {
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 1.25;
+              color: #262d33;
+              width: 80%;
+              margin: 15px 0 10px 0;
+            }
+            p {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 1.42857;
+              width: 80%;
+              color: #4b5157;
+            }
+          }
+          .forest_comments {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            p,
+            h4 {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 1.25;
+              color: #939699;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 5px;
+            }
+          }
+        }
+      }
+      // art
+      .art {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 20px;
+        border-bottom: 1px solid rgb(215, 214, 214);
+        width: 848px;
+        height: 245px;
+        border-radius: 0 0 8px 8px;
+        &__text {
+          .art_title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h4 {
+              font-weight: 900;
+              font-size: 12px;
+              line-height: 1.25;
+              letter-spacing: 0.04em;
+              text-transform: uppercase;
+              color: #ac8ee3;
+            }
+          }
+          .art_text {
+            h2 {
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 1.25;
+              color: #262d33;
+              width: 90%;
+              margin: 15px 0 10px 0;
+            }
+            p {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 1.42857;
+              width: 90%;
+              color: #4b5157;
+            }
+          }
+          .art_comments {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            p,
+            h4 {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 1.25;
+              color: #939699;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 5px;
+            }
+          }
+        }
+      }
+    }
+    .news__right_card {
+      position: sticky;
+      z-index: 999;
+      top: 0;
+      width: 263px;
+      height: 770px;
+      background-color: #fff;
+      margin-left: 30px;
+      border-radius: 10px;
+      padding: 15px;
+      .news_aside_wrapper {
+        h2 {
+          font-weight: 900;
+          font-size: 14px;
+          line-height: 1.42857;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+          color: #262d33;
+          text-align: center;
+          margin: 20px 0 20px 0;
+        }
+        .aside_cards {
+          h5 {
+            margin-bottom: 5px;
+          }
+          h3 {
+            text-align: center;
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 1.42857;
+
+            color: #262d33;
+            margin-top: 10px;
+          }
+          .aside_card {
+            display: flex;
+            gap: 7px;
+            margin: 13px 0 13px 0;
+            h3 {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 1.42857;
+              color: #4b5157;
+              width: 90%;
+              text-align: start;
+            }
+            p {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 1.25;
+              color: #939699;
+            }
+          }
+        }
+      }
+    }
+  }
+}
