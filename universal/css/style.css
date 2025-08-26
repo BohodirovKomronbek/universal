@@ -1717,5 +1717,182 @@ i {
     height: 40px;
   }
 }
+.travel {
+  background: #262d33;
+}
+.travel .travel_links > div {
+  background: #262d33;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  overflow-x: auto;
+}
+.travel .travel_links > div li {
+  text-wrap: nowrap;
+}
+.travel .travel_links > div li a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.42857;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.travel .travel_bottom {
+  padding: 50px 0;
+  background: url("../img/travel_bg.png") no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.travel .travel_bottom .travel_bottom_destination > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.travel .travel_bottom .travel_bottom_destination > div h2 {
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #4592ff;
+  padding-left: 90px;
+}
+.travel .travel_bottom .travel_bottom_destination > div a {
+  text-decoration: none;
+}
+.travel .travel_bottom .travel_bottom_destination > div a h3 {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.travel .travel_bottom .travel_bottom_main > div {
+  padding: 50px 0 30px 0;
+}
+.travel .travel_bottom .travel_bottom_main > div .travel_bottom_main_text {
+  display: flex;
+  gap: 60px;
+}
+.travel .travel_bottom .travel_bottom_main > div .travel_bottom_main_text svg {
+  margin-top: 20px;
+}
+.travel .travel_bottom .travel_bottom_main > div h1 {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1.27273;
+  color: #fff;
+  width: 50%;
+}
+.travel .travel_bottom .travel_bottom_main > div p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66667;
+  color: #fff;
+  opacity: 0.85;
+  width: 40%;
+  padding: 30px 0 60px 0;
+  margin-left: 90px;
+}
+.travel .travel_bottom .travel_bottom_comments > div {
+  display: flex;
+  gap: 30px;
+  padding-left: 90px;
+}
+.travel .travel_bottom .travel_bottom_comments > div p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.85;
+  line-height: 1.25;
+  color: #fff;
+}
+.travel .travel_bottom .travel_bottom_comments > div button {
+  width: 143px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2549019608);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: transparent;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #fff;
+}
+.travel .travel_bottom .travel_bottom_comments > div button:hover {
+  transform: scale(0.9);
+}
+
+@media (max-width: 1073px) {
+  .travel .travel_bottom_main > div p {
+    width: 70%;
+    font-size: 15px;
+  }
+  .travel .travel_bottom_main > div .travel_bottom_main_text h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .travel .travel_bottom .travel_bottom_main .travel_bottom_main_text h1 {
+    width: 80%;
+  }
+  .travel .travel_bottom .travel_bottom_main .p {
+    width: 70%;
+  }
+}
+@media (max-width: 700px) {
+  .travel .travel_bottom .travel_bottom_main .travel_bottom_main_text h1 {
+    width: 80%;
+    font-size: 30px;
+  }
+  .travel .travel_bottom .travel_bottom_main .p {
+    width: 70%;
+    font-size: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .travel .travel_bottom .travel_bottom_destination > div h2 {
+    padding-left: 0px;
+  }
+  .travel .travel_bottom .travel_bottom_main .travel_bottom_main_text svg {
+    display: none;
+  }
+  .travel .travel_bottom .travel_bottom_main .p {
+    margin-left: 0;
+  }
+  .travel .travel_bottom .travel_bottom_comments > div {
+    padding-left: 0;
+  }
+}
+@media (max-width: 458px) {
+  .travel .travel_bottom .travel_bottom_main .travel_bottom_main_text h1 {
+    font-size: 25px;
+    width: 100%;
+  }
+  .travel .travel_bottom .travel_bottom_main .p {
+    width: 80%;
+    font-size: 14px;
+    padding-bottom: 0;
+  }
+  .travel .travel_bottom .travel_bottom_comments > div {
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

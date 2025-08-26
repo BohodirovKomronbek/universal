@@ -1,0 +1,222 @@
+@use "./mixns" as *;
+@use "./variable" as *;
+
+.travel {
+  background: #262d33;
+
+  .travel_links > div {
+    background: #262d33;
+    padding: 20px 0;
+    @include flex(center, space-between, 30px);
+    overflow-x: auto;
+    li {
+      text-wrap: nowrap;
+      a {
+        color: #fff;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 1.42857;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .travel_bottom {
+    padding: 50px 0;
+    background: url("../img/travel_bg.png") no-repeat;
+    background-size: cover;
+    height: 100%;
+    .travel_bottom_destination > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h2 {
+        font-weight: 900;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #4592ff;
+        padding-left: 90px;
+      }
+      a {
+        text-decoration: none;
+        h3 {
+          font-weight: 900;
+          font-size: 14px;
+          line-height: 1.42857;
+          color: #fff;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+        }
+      }
+    }
+    .travel_bottom_main > div {
+      padding: 50px 0 30px 0;
+      .travel_bottom_main_text {
+        display: flex;
+        gap: 60px;
+        svg {
+          margin-top: 20px;
+        }
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 1.27273;
+        color: #fff;
+        width: 50%;
+      }
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.66667;
+        color: #fff;
+        opacity: 0.85;
+        width: 40%;
+        padding: 30px 0 60px 0;
+        margin-left: 90px;
+      }
+    }
+    .travel_bottom_comments > div {
+      display: flex;
+      gap: 30px;
+      padding-left: 90px;
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        font-weight: 400;
+        font-size: 12px;
+        opacity: 0.85;
+        line-height: 1.25;
+        color: #fff;
+      }
+      button {
+        width: 143px;
+        height: 40px;
+        border: 1px solid #ffffff41;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        background-color: transparent;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 1.42857;
+        color: #fff;
+      }
+      button:hover {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+@media (max-width: 1073px) {
+  .travel {
+    .travel_bottom_main > div {
+      p {
+        width: 70%;
+        font-size: 15px;
+      }
+      .travel_bottom_main_text {
+        h1 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .travel {
+    .travel_bottom {
+      .travel_bottom_main {
+        .travel_bottom_main_text {
+          h1 {
+            width: 80%;
+          }
+        }
+        .p {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .travel {
+    .travel_bottom {
+      .travel_bottom_main {
+        .travel_bottom_main_text {
+          h1 {
+            width: 80%;
+            font-size: 30px;
+          }
+        }
+        .p {
+          width: 70%;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .travel {
+    .travel_bottom {
+      .travel_bottom_destination > div {
+        h2 {
+          padding-left: 0px;
+        }
+      }
+      .travel_bottom_main {
+        .travel_bottom_main_text {
+          svg {
+            display: none;
+          }
+        }
+        .p {
+          margin-left: 0;
+        }
+      }
+      .travel_bottom_comments > div {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 458px) {
+  .travel {
+    .travel_bottom {
+      .travel_bottom_main {
+        .travel_bottom_main_text {
+          h1 {
+            font-size: 25px;
+            width: 100%;
+          }
+        }
+        .p {
+          width: 80%;
+          font-size: 14px;
+          padding-bottom: 0;
+        }
+      }
+      .travel_bottom_comments > div {
+        flex-direction: column;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+      }
+    }
+  }
+}
