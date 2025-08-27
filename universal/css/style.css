@@ -1894,5 +1894,127 @@ i {
     justify-content: center;
   }
 }
+.geography > div {
+  padding: 50px 0;
+  display: flex;
+  align-items: start;
+  justify-self: start;
+}
+.geography > div .geography_text span {
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 0.75;
+  text-align: center;
+  color: #4592ff;
+}
+.geography > div .geography_text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66667;
+  color: #4b5157;
+  width: 60%;
+}
+.geography > div .geography_text h1 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.2;
+  color: #262d33;
+  padding: 30px 0;
+}
+.geography > div .geography_text .padding_p {
+  padding: 30px 0;
+}
+.geography > div .geography_aside {
+  position: sticky;
+  top: 0;
+  z-index: 998;
+}
+.geography > div .geography_aside .geography_card {
+  border: 1px solid #d9dadb;
+  border-radius: 10px;
+  width: 263px;
+  height: 360px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.geography > div .geography_aside .geography_card h1 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.25;
+  text-align: center;
+  color: #262d33;
+  padding-top: 15px;
+}
+.geography > div .geography_aside .geography_card p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-align: center;
+  color: #4b5157;
+  padding: 5px 0 15px 0;
+}
+.geography > div .geography_aside .geography_card h4 {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-align: center;
+  color: #262d33;
+}
+.geography > div .geography_aside .geography_card .geo_card_icon {
+  display: flex;
+  gap: 10px;
+  padding: 25px 0 30px 0;
+}
+.geography > div .geography_aside .geography_card .geo_card_icon .card_icon {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid rgba(75, 81, 87, 0.368627451);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.geography > div .geography_aside .geography_card .geo_card_icon .card_icon:hover {
+  transform: translateY(-10px);
+  transition: ease 0.5s;
+}
+.geography > div .geography_aside .geography_card h6 {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(75, 81, 87, 0.368627451);
+}
+.geography > div .geography_aside .geography_card h5 {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-align: center;
+  color: #262d33;
+  padding: 20px 0 13px 0;
+}
+
+@media (max-width: 1000px) {
+  .geography > div .geography_text p {
+    font-size: 15px;
+    width: 80%;
+  }
+}
+@media (max-width: 700px) {
+  .geography > div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .geography > div .geography_text p {
+    font-size: 15px;
+    width: 90%;
+  }
+  .geography > div .geography_aside {
+    margin-top: 30px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
